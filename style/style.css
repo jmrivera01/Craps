@@ -9,7 +9,7 @@ body {
 
 .background{
     position: absolute;
-    background-image: url("/images/background.jpg");
+    background-image: url("../images/background.jpg");
     height: 100vh;
     width: 205vh; 
     opacity: 40%;
