@@ -1,0 +1,121 @@
+body {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: black;
+}
+
+
+.background{
+    position: absolute;
+    background-image: url("/images/background.jpg");
+    height: 100vh;
+    width: 205vh; 
+    opacity: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+
+/* actual GUI*/
+
+.main-window{
+    position: absolute;
+    grid-column: 1/-1;
+    margin: 0%;
+width: 70%;
+    background-color: white;
+    border: 3px solid purple;
+    padding: 10px;
+    min-height: 40vh;
+    opacity: 80%;
+
+    /*for text inside the console:*/
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.score-window{
+    position:absolute;
+    margin-left: 75%;
+    justify-content:space-evenly;
+    font-size: xx-large;
+    color: yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    height:50%;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.4);
+}
+.red {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.blue {
+    background-color: rgba(0, 0, 255, 0.4);
+}
+.green {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+.red:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.yellow:hover {
+    background-color: rgba(255, 255, 0, 1);
+}
+.green:hover {
+    background-color: rgba(0, 255, 0, 1);
+}
+.blue:hover {
+    background-color: rgba(0, 0, 255, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.buttons {
+    margin-left: 5%;
+    position:relative;
+    width: 700px;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22%;
+    grid-template-columns: 1fr;
+}
+
+.restart-button {
+    position: absolute;
+    padding-top: 9%;
+    padding-left: 1%;
+    font-size: 5rem;
+    color: aliceblue;
+}
